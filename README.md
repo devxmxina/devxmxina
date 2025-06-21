@@ -10,8 +10,6 @@ Trace: Invisible
 Objective: Unknown
 ```
 
-Reality is just a complex algorithm.
-
 ▸ Crafting intelligent systems
 ▸ Mastering the language of data
 ▸ Solving problems others avoid

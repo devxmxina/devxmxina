@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="980" viewBox="0 0 1400 980">
+  <defs>
+    <linearGradient id="bggrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#05051a"/>
+      <stop offset="60%" stop-color="#0a0a2e"/>
+      <stop offset="100%" stop-color="#05051a"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="10%" r="70%">
+      <stop offset="0%" stop-color="rgba(0,255,65,0.18)"/>
+      <stop offset="100%" stop-color="rgba(0,255,65,0)"/>
+    </radialGradient>
+    <filter id="neon" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <style>
+      .wrap { fill: none; stroke: #00ff41; stroke-width: 3; rx: 16; ry: 16; }
+      .scan { fill: url(#glow); }
+      .head { font-family: Orbitron, 'Share Tech Mono', monospace; font-size: 42px; fill: #39ff14; filter:url(#neon); letter-spacing: 3px; }
+      .sub  { font-family: 'Share Tech Mono', monospace; font-size: 22px; fill: #7fff7f; }
+      .mono { font-family: Orbitron, 'Share Tech Mono', monospace; font-size: 26px; fill: #39ff14; filter:url(#neon); letter-spacing: 2px; }
+      .body { font-family: 'Share Tech Mono', monospace; font-size: 20px; fill: #b7ffb7; }
+      .muted{ fill:#7fff7f; font-size: 18px; }
+      .divider { stroke:#00ff41; stroke-width:1.5; opacity:.65 }
+      .corner { fill:none; stroke:#00ff41; stroke-width:3 }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect x="0" y="0" width="1400" height="980" fill="url(#bggrad)"/>
+  <rect x="0" y="0" width="1400" height="980" class="scan"/>
+
+  <!-- Frame -->
+  <rect x="24" y="24" width="1352" height="932" class="wrap"/>
+  <!-- Neon corners -->
+  <path d="M48,48 h80 M48,48 v80" class="corner"/>
+  <path d="M1352,48 h-80 M1352,48 v80" class="corner"/>
+  <path d="M48,932 h80 M48,932 v-80" class="corner"/>
+  <path d="M1352,932 h-80 M1352,932 v-80" class="corner"/>
+
+  <!-- Headings -->
+  <text class="head" x="72" y="110">ABOUT</text>
+  <line x1="72" y1="120" x2="1328" y2="120" class="divider"/>
+
+  <!-- About text -->
+  <text>
+    <tspan x="72" y="165" class="body">I create — new ideas, new systems, new ways to see the unseen.</tspan>
+<tspan x="72" y="201" class="body">For me, design and beauty are as important as function and intelligence.</tspan>
+<tspan x="72" y="237" class="body">Blending AI, data science, and aesthetics, I build solutions that are powerful and visually striking —</tspan>
+<tspan x="72" y="273" class="body">where technology meets artistry.</tspan>
+  </text>
+
+  <!-- Skills title -->
+  <text class="head" x="72" y="360">SKILLS</text>
+  <line x1="72" y1="370" x2="1328" y2="370" class="divider"/>
+
+  <!-- Mono line -->
+  <text class="mono" x="72" y="410">⌁ AI × Code × Design ⌁</text>
+
+  <!-- Skills columns -->
+  <g>
+    <text>
+      <tspan x="72" y="455" class="body">⌁ AI × Code × Design ⌁</tspan>
+<tspan x="72" y="485" class="body">LLMs ⚡ Computer Vision ⚡ NLP ⚡ MLOps</tspan>
+<tspan x="72" y="515" class="body">Python × R × SQL × SAS</tspan>
+<tspan x="72" y="545" class="body">REST APIs × FastAPI × Streamlit × Web Scraping</tspan>
+<tspan x="72" y="575" class="body">Data Pipelines × MongoDB × PostgreSQL</tspan>
+<tspan x="72" y="605" class="body">TensorFlow × PyTorch × scikit-learn</tspan>
+    </text>
+    <text>
+      <tspan x="520" y="455" class="body">Docker × GitHub Actions × CI/CD × MLflow</tspan>
+<tspan x="520" y="485" class="body">RAG × LangChain × Azure AI Foundry</tspan>
+<tspan x="520" y="515" class="body">Rust × TypeScript × Web3 × Smart Contracts</tspan>
+<tspan x="520" y="545" class="body">Figma × Brizy × Adobe Suite</tspan>
+<tspan x="520" y="575" class="body">Data Visualization — Plotly × Power BI × Matplotlib</tspan>
+    </text>
+    <text>
+      <tspan x="980" y="455" class="muted">Now building with: LangChain, RAG, Playwright, Azure AI Foundry, Hugging Face</tspan>
+<tspan x="980" y="483" class="muted">Learning: Rust, TypeScript, WebAssembly, Web3</tspan>
+    </text>
+  </g>
+</svg>
